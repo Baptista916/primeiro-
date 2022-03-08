@@ -1,0 +1,26 @@
+var px=0;
+var py=0;
+function load(){
+document.addEventListener("keydown",tecla);
+}
+function tecla(){
+var jg=document.getElementById("jogador");
+var tecla = event.keyCode;
+if(tecla==37){
+//Esquerda
+px-=10;
+jg.style.left=px+"px";
+}else if(tecla==39){
+//Direita
+px+=10;
+jg.style.left=px+"px";
+}
+if(tecla==38){
+//Cima
+py-=10;
+jg.style.top=py+"px";
+}else if(tecla==40){
+//baixo
+py+=10;
+jg.style.top=py+"px";
+}console.loentListener
